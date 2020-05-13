@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+pylint-flask = "*"
+flask-shell-ipython = "*"
+jupyter = "*"
+pytest = "*"
+
+[packages]
+psycopg2-binary = "*"
+boto3 = "*"
+SQLAlchemy = "*"
+uWSGI = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+flask-testing = "*"
+flask-restful = "*"
+
+[requires]
+python_version = "3.6"
