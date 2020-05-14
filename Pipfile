@@ -8,7 +8,6 @@ pylint = "*"
 pylint-flask = "*"
 flask-shell-ipython = "*"
 jupyter = "*"
-pytest = "*"
 
 [packages]
 psycopg2-binary = "*"
@@ -20,6 +19,8 @@ flask-sqlalchemy = "*"
 flask-migrate = "*"
 flask-testing = "*"
 flask-restful = "*"
+pytest = "*"
+wtforms = "*"
 
 [requires]
 python_version = "3.6"

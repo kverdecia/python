@@ -13,9 +13,9 @@ class Config:
 
     def get_database_uri(self):
         if self.TESTING:
-            database_uri = os.environ.get('TEST_DATABASE_URI', 'postgresql+psycopg2://postgresql:123456789@db/test_db')
+            database_uri = os.environ.get('TEST_DATABASE_URI', 'postgresql+psycopg2://bankar:bankar@db_test/test_bankar')
             parsed = urllib.parse.urlparse(database_uri)
             if not parsed.path.startswith('/test_'):
                 raise ValueError("Wrong test configuration: Database name in test database uri must begin with 'test_'")
             return database_uri
-        return os.environ.get('DATABASE_URI', 'postgresql+psycopg2://postgresql:123456789@db/db')
+        return os.environ.get('DATABASE_URI', 'postgresql+psycopg2://bankar:bankar@db/bankar')
